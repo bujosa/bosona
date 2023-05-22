@@ -1,3 +1,6 @@
+use bosona::task::Task;
+
 fn main() {
-    println!("Hello, world!");
+    let task = Task::new("Learn Rust");
+    println!("{:?}", task);
 }
