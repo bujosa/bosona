@@ -5,7 +5,7 @@ fn main() {
     let task = Task::default();
     println!("Default {:?}", task);
 
-    // Or
+    // Or using unwrap_or_default
     let task: Option<Task> = None;
     let task = task.unwrap_or_default();
     println!("Unwrap {:?}", task);
