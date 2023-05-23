@@ -4,7 +4,16 @@ pub struct Task {
     pub done: bool,
 }
 
-// Builder Pattern for Task struct
+impl Default for Task {
+    fn default() -> Self {
+        Self {
+            title: String::new(),
+            done: false,
+        }
+    }
+}
+
+// Constructor Pattern
 impl Task {
     pub fn new(title: impl Into<String>) -> Task {
         Task {
